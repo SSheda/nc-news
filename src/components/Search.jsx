@@ -2,7 +2,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react';
 
-function Search({ search, setSearch }) {
+function Search({ setSearch }) {
     const [input, setInput] = useState("")
 
     const HandleChange = (event) => {
