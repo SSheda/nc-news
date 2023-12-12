@@ -1,19 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import GetAllTopics from "../api/GetAllTopics";
 
-function TopicMenu({ topics, setTopics}) {
-    /* const [category, setCategory] = useState("")
-    
+function TopicMenu({ topics, setTopics, setSearch }) {
+
     useEffect(() => {
         GetAllTopics().then((data) => {
             setTopics(data);
         });
     }, []);
-    
+
     function handleClick(event) {
-        setCategory(event.target.value)
-      }
-        
+        setSearch(event.target.value)
+    }
 
     const categories = topics.map((topic) => (
         <li key={topic.slug}>
@@ -21,16 +19,13 @@ function TopicMenu({ topics, setTopics}) {
                 {topic.slug}
             </button>
         </li>
-    )); */
+    ));
 
-
-    /* <div>
-            <p>hello
-                </p>    
-                        <ul>{categories}</ul>
-        </div> */
-      
-    return ( <p>hello</p> );
+    return (
+        <div>
+            <ul>{categories}</ul>
+        </div>
+    );
 };
 
 export default TopicMenu;

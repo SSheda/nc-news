@@ -5,7 +5,7 @@ import AllArticlesList from "../components/AllArticlesList";
 import TopicMenu from "../components/TopicMenu";
 
 
-function Home({ setAllArticles, setIsLoading, isLoading, allArticles, search, setTopics, topics }) {
+function Home({ setAllArticles, setIsLoading, isLoading, allArticles, search, setTopics, topics, setSearch }) {
     useEffect(() => {
         GetAllArticles()
             .then((data) => {
@@ -28,7 +28,7 @@ function Home({ setAllArticles, setIsLoading, isLoading, allArticles, search, se
     }
     return (
         <div>
-            {/* <TopicMenu topics={topics} setTopics={setTopics} allArticles={allArticles}/> */}
+            <TopicMenu topics={topics} setTopics={setTopics} allArticles={allArticles} setSearch={setSearch}/>
             <AllArticlesList allArticles={allArticles} />
         </div>
     )

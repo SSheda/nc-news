@@ -23,6 +23,7 @@ function App() {
           allArticles={allArticles}
           setAllArticles={setAllArticles}
           setIsLoading={setIsLoading}
+          setSearch={setSearch}
           isLoading={isLoading} search={search}
           setTopics={setTopics} topics={topics} />} />
         <Route path="/account" element={<Account />} />
