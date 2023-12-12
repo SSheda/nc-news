@@ -16,7 +16,7 @@ function TopicMenu({ topics, setTopics, setSearch }) {
     const categories = topics.map((topic) => (
         <li key={topic.slug}>
             <button onClick={handleClick} value={topic.slug}>
-                {topic.slug}
+                {topic.slug} 
             </button>
         </li>
     ));
